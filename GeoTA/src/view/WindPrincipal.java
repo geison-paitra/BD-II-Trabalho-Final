@@ -32,14 +32,21 @@ public class WindPrincipal extends javax.swing.JFrame {
             switch(botao.getName()) {
                 case "btnBairro":
                     WindCadastroBairro windCadastroBairro = new WindCadastroBairro();
+                    windCadastroBairro.setTitle("Cadastro De Bairros");
                     this.windPrincipal.setVisible(false);
                     windCadastroBairro.setVisible(true);
                     break;
                 case "btnOcorrencia":
-                    System.out.println("Ocorrencia");
+                    WindOcorrencia windOcorrencia = new WindOcorrencia();
+                    windOcorrencia.setTitle("Cadastro De Ocorrência");
+                    this.windPrincipal.setVisible(false);
+                    windOcorrencia.setVisible(true);
                     break;
                 case "btnRelatorio":
-                    System.out.println("Relatorio");
+                    WindRelatorio windRelatorio = new  WindRelatorio();
+                    windRelatorio.setTitle("Cadastro De Relatório");
+                    this.windPrincipal.setVisible(false);
+                    windRelatorio.setVisible(true);
                     break;
             }
         }
